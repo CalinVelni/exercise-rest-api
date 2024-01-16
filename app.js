@@ -65,7 +65,7 @@ app.put("/games/:id", async (req, res) => {
         res.send(game);
     }
     catch(err){
-        res.status(404).send(err.message);
+        res.status(400).send(err.message);
     };
 });
 
@@ -83,7 +83,7 @@ app.patch("/games/:id", async (req, res) => {
         res.send(game);
     }
     catch(err){
-        res.status(404).send(err.message);
+        res.status(400).send(err.message);
     };
 });
 
